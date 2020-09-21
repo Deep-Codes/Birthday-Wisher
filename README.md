@@ -1,4 +1,4 @@
-🎉Birthday Wisher with Countdown!🎉
+# 🎉Birthday Wisher with Countdown!🎉
 Made with React with Hooks.
 ## Getting started
 
@@ -10,7 +10,7 @@ To get It running locally:
 - `npm install` to install all req'd dependencies
 - `npm start` to start the local server (this project uses create-react-app)
 
-##Setting Up
+## Setting Up
 Name , Day and Month of the Birthday in the `Birthday.jsx` file.
 
 ```
@@ -19,10 +19,10 @@ Name , Day and Month of the Birthday in the `Birthday.jsx` file.
   const day = 21; // Day of the Birthday
 ```
 
-###ScreenShot of Coutdown Timer⏲️
+## ScreenShot of Coutdown Timer⏲️
 ![ScreenShot of Countdown](screenshots/countdown.png)
 
-###Birthday Wisher🎂
+## Birthday Wisher🎂
 Loads this Page Instead of Coutdown on the Birthday
 ![ScreenShot of Countdown](screenshots/wishPage.png)
 
