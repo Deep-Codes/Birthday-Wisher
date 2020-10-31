@@ -38,7 +38,9 @@ const Birthday = () => {
         let birthdayDay = new Date(currentYear, month - 1, day);
         if (dateAtm > birthdayDay) {
           birthdayDay = new Date(currentYear + 1, month - 1, day);
-        } else if (dateAtm.getFullYear() === birthdayDay.getFullYear() + 1) {
+        } 
+        
+        else if (dateAtm.getFullYear() === birthdayDay.getFullYear() + 1) {
           birthdayDay = new Date(currentYear, month - 1, day);
         }
 
@@ -104,7 +106,7 @@ const Birthday = () => {
       {!isItBday && (
         <>
           <div className='birthdate'>
-            Birth-Date: {day} {monthBday}
+            Birth-Date: {day} {monthBday} {currentYear}
           </div>
           <div className='credits'>
             <a href='https://github.com/Deep-Codes'>
