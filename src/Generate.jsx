@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Generate = () => {
   const [name, setName] = useState('');
@@ -6,7 +7,9 @@ const Generate = () => {
   const [month, setMonth] = useState(1);
   const [link, setLink] = useState('');
   const generateLink = () => {
-    setLink(`http://localhost:3000/birthday/${name}/${day}/${month}`);
+    setLink(
+      `https://birthday-wisher.netlify.app/birthday/${name}/${day}/${month}`
+    );
   };
   return (
     <div className='page'>
@@ -23,6 +26,8 @@ const Generate = () => {
           placeholder='Enter Day'
           value={day}
           onChange={(e) => setDay(e.target.value)}
+          max={31}
+          min={1}
         />
         <select value={month} onChange={(e) => setMonth(e.target.value)}>
           <option value=''>Select Month</option>
@@ -45,7 +50,17 @@ const Generate = () => {
       <button className='btn' onClick={() => generateLink()}>
         Generate Link
       </button>
-      {link !== '' ? link : ''}
+
+      {link !== '' ? (
+        <>
+          <p className='gen-link'>{link}</p>
+          <Link to={`birthday/${name}/${day}/${month}`}>
+            <button className='btn'>Visit Link</button>
+          </Link>
+        </>
+      ) : (
+        ''
+      )}
     </div>
   );
 };

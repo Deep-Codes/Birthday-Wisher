@@ -134,3 +134,15 @@ select:focus,
   font-size: 18px;
   font-weight: 700;
 }
+.btn:hover {
+  color: white;
+}
+a {
+  color: #7f78d2;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.gen-link {
+  margin-top: 20px;
+  font-size: 400;
+}

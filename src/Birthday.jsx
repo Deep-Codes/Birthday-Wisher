@@ -114,8 +114,8 @@ const Birthday = ({ name, day, month }) => {
             <a href='https://github.com/Deep-Codes'>
               <img src={githubLogo} alt='Github-Logo' className='github-logo' />
             </a>
-            <Link to='/generate'>Generate Here</Link>
           </div>
+          <Link to='/generate'>Generate Here</Link>
         </>
       )}
     </div>
