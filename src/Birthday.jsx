@@ -13,7 +13,8 @@ const Birthday = ({ name, day, month }) => {
     isItBday: false,
   });
 
-  if (name === undefined && day === undefined && month === undefined) {
+  if (name === undefined || day === undefined || month === undefined) {
+    // This is if not enough params are provided
     name = 'Deepankar'; // Name of the Person
     month = 6; // Month of the Birthday
     day = 14; // Day of the Birthday
@@ -113,7 +114,7 @@ const Birthday = ({ name, day, month }) => {
             <a href='https://github.com/Deep-Codes'>
               <img src={githubLogo} alt='Github-Logo' className='github-logo' />
             </a>
-            <Link to='/birthday'>Generate Here</Link>
+            <Link to='/generate'>Generate Here</Link>
           </div>
         </>
       )}
