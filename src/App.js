@@ -8,12 +8,12 @@ function App() {
   return (
     <div className='App'>
       <Switch>
-        <Route exact path='/'>
-          <Birthday />
-        </Route>
-        <Route exact path='/birthday'>
-          <RouterBirthday />
-        </Route>
+        <Route exact path='/' component={Birthday} />
+        <Route
+          exact
+          path='/birthday/:name?/:day?/:month?'
+          component={RouterBirthday}
+        />
       </Switch>
     </div>
   );

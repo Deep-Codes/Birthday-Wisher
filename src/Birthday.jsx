@@ -3,7 +3,7 @@ import Countdown from './Countdown';
 import githubLogo from './githubLogo.svg';
 import { Link } from 'react-router-dom';
 
-const Birthday = () => {
+const Birthday = ({ name, day, month }) => {
   // useState Hooks
   const [state, setState] = useState({
     seconds: 0,
@@ -13,9 +13,11 @@ const Birthday = () => {
     isItBday: false,
   });
 
-  const name = 'Deepankar'; // Name of the Person
-  const month = 6; // Month of the Birthday
-  const day = 14; // Day of the Birthday
+  if (name === undefined && day === undefined && month === undefined) {
+    name = 'Deepankar'; // Name of the Person
+    month = 6; // Month of the Birthday
+    day = 14; // Day of the Birthday
+  }
 
   // get current time
   const currentTime = new Date();
@@ -80,7 +82,7 @@ const Birthday = () => {
         }));
       }
     }, 1000);
-  }, [currentYear, isItBday]);
+  }, [currentYear, day, isItBday, month]);
 
   let birth = new Date(currentYear, month - 1, day);
   const monthNames = [
