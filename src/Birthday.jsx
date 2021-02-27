@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Countdown from './Countdown';
 import githubLogo from './githubLogo.svg';
+import { Link } from 'react-router-dom';
 
 const Birthday = () => {
   // useState Hooks
@@ -38,9 +39,7 @@ const Birthday = () => {
         let birthdayDay = new Date(currentYear, month - 1, day);
         if (dateAtm > birthdayDay) {
           birthdayDay = new Date(currentYear + 1, month - 1, day);
-        } 
-        
-        else if (dateAtm.getFullYear() === birthdayDay.getFullYear() + 1) {
+        } else if (dateAtm.getFullYear() === birthdayDay.getFullYear() + 1) {
           birthdayDay = new Date(currentYear, month - 1, day);
         }
 
@@ -112,6 +111,7 @@ const Birthday = () => {
             <a href='https://github.com/Deep-Codes'>
               <img src={githubLogo} alt='Github-Logo' className='github-logo' />
             </a>
+            <Link to='/birthday'>Generate Here</Link>
           </div>
         </>
       )}
