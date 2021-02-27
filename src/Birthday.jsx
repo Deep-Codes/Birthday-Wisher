@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Countdown from './Countdown';
 import githubLogo from './githubLogo.svg';
+import { Link } from 'react-router-dom';
 
-const Birthday = () => {
+const Birthday = ({ name, day, month }) => {
   // useState Hooks
   const [state, setState] = useState({
     seconds: 0,
@@ -12,9 +13,12 @@ const Birthday = () => {
     isItBday: false,
   });
 
-  const name = 'Deepankar'; // Name of the Person
-  const month = 6; // Month of the Birthday
-  const day = 14; // Day of the Birthday
+  if (name === undefined || day === undefined || month === undefined) {
+    // This is if not enough params are provided
+    name = 'Deepankar'; // Name of the Person
+    month = 6; // Month of the Birthday
+    day = 14; // Day of the Birthday
+  }
 
   // get current time
   const currentTime = new Date();
@@ -38,9 +42,7 @@ const Birthday = () => {
         let birthdayDay = new Date(currentYear, month - 1, day);
         if (dateAtm > birthdayDay) {
           birthdayDay = new Date(currentYear + 1, month - 1, day);
-        } 
-        
-        else if (dateAtm.getFullYear() === birthdayDay.getFullYear() + 1) {
+        } else if (dateAtm.getFullYear() === birthdayDay.getFullYear() + 1) {
           birthdayDay = new Date(currentYear, month - 1, day);
         }
 
@@ -81,7 +83,7 @@ const Birthday = () => {
         }));
       }
     }, 1000);
-  }, [currentYear, isItBday]);
+  }, [currentYear, day, isItBday, month]);
 
   let birth = new Date(currentYear, month - 1, day);
   const monthNames = [
@@ -113,6 +115,7 @@ const Birthday = () => {
               <img src={githubLogo} alt='Github-Logo' className='github-logo' />
             </a>
           </div>
+          <Link to='/generate'>Generate Here</Link>
         </>
       )}
     </div>

@@ -78,3 +78,71 @@ body {
 .github-logo:hover {
   opacity: 1;
 }
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+.form input {
+  margin: 10px;
+}
+input {
+  color: var(--main-text-color-dark);
+  outline: none;
+  width: 300px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px rgba(255, 255, 255, 0.2) solid;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 18px;
+}
+select {
+  width: 300px;
+  height: 40px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.527);
+  font-family: Montserrat, sans-serif;
+  border: 1px rgba(255, 255, 255, 0.164) solid;
+  padding-left: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 10px;
+  outline: none;
+}
+input:focus,
+select:focus,
+.btn:focus {
+  border: 1px rgba(255, 255, 255, 1) solid;
+  transition: all 0.5s;
+}
+.btn {
+  width: 300px;
+  height: 40px;
+  margin-top: 20px;
+  outline: none;
+  border: 1px rgba(255, 255, 255, 0.2) solid;
+  background-color: transparent;
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.719);
+  font-size: 18px;
+  font-weight: 700;
+}
+.btn:hover {
+  color: white;
+}
+a {
+  color: #7f78d2;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.gen-link {
+  margin-top: 20px;
+  font-size: 400;
+}
