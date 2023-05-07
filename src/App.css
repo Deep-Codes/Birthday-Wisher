@@ -116,6 +116,11 @@ select {
   margin-top: 10px;
   outline: none;
 }
+
+option{
+  color:gray;
+}
+
 input:focus,
 select:focus,
 .btn:focus {
