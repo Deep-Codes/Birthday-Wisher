@@ -12,7 +12,7 @@ function App() {
         <Route exact path='/' component={Birthday} />
         <Route
           exact
-          path='/birthday/:name?/:day?/:month?'
+          path='/birthday/:name/:day/:month'
           component={RouterBirthday}
         />
         <Route exact path='/generate' component={Generate} />
