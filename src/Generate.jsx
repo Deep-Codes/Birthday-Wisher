@@ -16,6 +16,8 @@ const Generate = () => {
       <h1>Generate Here</h1>
       <div className='form'>
         <input
+          required
+          pattern='([a-zA-Z]+\s*)+'
           type='text'
           placeholder='Enter Name'
           value={name}
