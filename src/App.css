@@ -2,147 +2,172 @@
 
 /* VARIABLES */
 :root {
-  --main-bg-color-dark: #212529;
-  --main-text-color-dark: #e8e8e8;
+    --main-bg-color-dark: #212529;
+    --main-text-color-dark: #e8e8e8;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: var(--main-bg-color-dark);
-  color: var(--main-text-color-dark);
-  background-color: #1d1d1d;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--main-bg-color-dark);
+    color: var(--main-text-color-dark);
+    background-color: #1d1d1d;
 }
+
 .page {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
 .heading {
-  font-size: 45px;
+    font-size: 45px;
 }
+
 .highlight {
-  color: #7f78d2;
+    color: #7f78d2;
 }
+
 .countdown-wrapper {
-  max-width: 800px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 40px 0;
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 40px 0;
 }
+
 .countdown-box {
-  background-color: #413c69;
-  font-size: 50px;
-  font-weight: 700;
-  color: #dcd6f7;
-  border-radius: 15px;
-  width: 160px;
-  height: 160px;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    background-color: #413c69;
+    font-size: 50px;
+    font-weight: 700;
+    color: #dcd6f7;
+    border-radius: 15px;
+    width: 160px;
+    height: 160px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
 .legend {
-  font-size: 30px;
-  color: #a6b1e1;
+    font-size: 30px;
+    color: #a6b1e1;
 }
+
 .wish-message {
-  font-size: 45px;
-  font-weight: 700;
+    font-size: 45px;
+    font-weight: 700;
 }
+
 .birthdate {
-  font-size: 25px;
-  font-weight: 600;
-  color: #7f78d2;
+    font-size: 25px;
+    font-weight: 600;
+    color: #7f78d2;
 }
+
 .credits {
-  margin-top: 15px;
+    margin-top: 15px;
 }
+
 .github-logo {
-  opacity: 0.5;
-  width: 50px;
+    opacity: 0.5;
+    width: 50px;
 }
+
 .github-logo:hover {
-  opacity: 1;
+    opacity: 1;
 }
+
 .form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
 }
+
 .form input {
-  margin: 10px;
+    margin: 10px;
 }
+
 input {
-  color: var(--main-text-color-dark);
-  outline: none;
-  width: 300px;
-  height: 40px;
-  background-color: transparent;
-  border: 1px rgba(255, 255, 255, 0.2) solid;
-  border-radius: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 18px;
+    color: var(--main-text-color-dark);
+    outline: none;
+    width: 300px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px rgba(255, 255, 255, 0.2) solid;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
 }
+
 select {
-  width: 300px;
-  height: 40px;
-  background-color: transparent;
-  color: rgba(255, 255, 255, 0.527);
-  font-family: Montserrat, sans-serif;
-  border: 1px rgba(255, 255, 255, 0.164) solid;
-  padding-left: 20px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  border-radius: 5px;
-  font-size: 18px;
-  margin-top: 10px;
-  outline: none;
+    width: 300px;
+    height: 40px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.527);
+    font-family: Montserrat, sans-serif;
+    border: 1px rgba(255, 255, 255, 0.164) solid;
+    padding-left: 20px;
+    --webkit-appearance: none;
+    --moz-appearance: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+    outline: none;
 }
+
+.item {
+    background-color: #1d1d1d;
+}
+
 input:focus,
 select:focus,
 .btn:focus {
-  border: 1px rgba(255, 255, 255, 1) solid;
-  transition: all 0.5s;
+    border: 1px rgba(255, 255, 255, 1) solid;
+    transition: all 0.5s;
 }
+
 .btn {
-  width: 300px;
-  height: 40px;
-  margin-top: 20px;
-  outline: none;
-  border: 1px rgba(255, 255, 255, 0.2) solid;
-  background-color: transparent;
-  border-radius: 5px;
-  color: rgba(255, 255, 255, 0.719);
-  font-size: 18px;
-  font-weight: 700;
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+    outline: none;
+    border: 1px rgba(255, 255, 255, 0.2) solid;
+    background-color: transparent;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.719);
+    font-size: 18px;
+    font-weight: 700;
 }
+
 .btn:hover {
-  color: white;
+    color: white;
 }
+
 a {
-  color: #7f78d2;
-  font-weight: bold;
-  margin-top: 20px;
+    color: #7f78d2;
+    font-weight: bold;
+    margin-top: 20px;
 }
+
 .gen-link {
-  margin-top: 20px;
-  font-size: 400;
+    margin-top: 20px;
+    font-size: 400;
 }
