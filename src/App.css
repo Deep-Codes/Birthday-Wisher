@@ -101,12 +101,14 @@ input {
   padding-right: 10px;
   font-size: 18px;
 }
+/* Enhanced select style: adjusted bg and font color for better contrast, bold font for emphasis */
 select {
   width: 300px;
   height: 40px;
-  background-color: transparent;
-  color: rgba(255, 255, 255, 0.527);
+  background-color: #1d1d1d;
+  color: rgb(213, 213, 213);
   font-family: Montserrat, sans-serif;
+  font-weight: bold;
   border: 1px rgba(255, 255, 255, 0.164) solid;
   padding-left: 20px;
   -webkit-appearance: none;
@@ -115,7 +117,7 @@ select {
   font-size: 18px;
   margin-top: 10px;
   outline: none;
-}
+} 
 input:focus,
 select:focus,
 .btn:focus {
