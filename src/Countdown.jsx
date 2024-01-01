@@ -2,6 +2,14 @@ import React from 'react';
 import Wish from './Wish';
 
 const Countdown = ({ countdownData, name }) => {
+   if (!name.trim()) {
+    return (
+      <div>
+        <p className='error-message'>Please enter a valid name for the countdown.</p>
+      </div>
+    );
+  }
+  
   if (!countdownData.isItBday) {
     return (
       <div>
