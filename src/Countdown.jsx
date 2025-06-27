@@ -1,4 +1,5 @@
 import React from 'react';
+import { T } from '@tolgee/react';
 import Wish from './Wish';
 
 const Countdown = ({ countdownData, name }) => {
@@ -6,24 +7,30 @@ const Countdown = ({ countdownData, name }) => {
     return (
       <div>
         <h1 className='heading'>
-          Countdown to <span className='highlight'>{name}'s</span> Birthday
+          <T keyName="countdown-title" params={{ name: name }}>
+            Countdown to <span className='highlight'>{name}'s</span> Birthday
+          </T>
         </h1>
         <div className='countdown-wrapper'>
           <div className='countdown-box'>
             {countdownData.days}
-            <span className='legend'>Days</span>
+            <span className='legend'>
+<T keyName="countdown-days" /></span>
           </div>
           <div className='countdown-box'>
             {countdownData.hours}
-            <span className='legend'>Hours</span>
+            <span className='legend'>
+<T keyName="countdown-hours" /></span>
           </div>
           <div className='countdown-box'>
             {countdownData.minutes}
-            <span className='legend'>Minutes</span>
+            <span className='legend'>
+<T keyName="countdown-minutes" /></span>
           </div>
           <div className='countdown-box'>
             {countdownData.seconds}
-            <span className='legend'>Seconds</span>
+            <span className='legend'>
+<T keyName="countdown-seconds" /></span>
           </div>
         </div>
       </div>

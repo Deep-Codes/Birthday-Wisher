@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { T, useTranslate } from '@tolgee/react';
 
 const Generate = () => {
+  const { t } = useTranslate();
   const [name, setName] = useState('');
   const [day, setDay] = useState(1);
   const [month, setMonth] = useState(1);
@@ -13,49 +15,67 @@ const Generate = () => {
   };
   return (
     <div className='page'>
-      <h1>Generate Here</h1>
+      <h1>
+<T keyName="generate-title" /></h1>
       <div className='form'>
         <input
           type='text'
-          placeholder='Enter Name'
+          placeholder={
+t('enter-name-placeholder')}
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
         <input
           type='number'
-          placeholder='Enter Day'
+          placeholder={
+t('enter-day-placeholder')}
           value={day}
           onChange={(e) => setDay(e.target.value)}
           max={31}
           min={1}
         />
         <select value={month} onChange={(e) => setMonth(e.target.value)}>
-          <option value=''>Select Month</option>
+          <option value=''>
+<T keyName="select-month" /></option>
           <option selected value='1'>
-            January
+            
+<T keyName="january-option" />
           </option>
-          <option value='2'>February</option>
-          <option value='3'>March</option>
-          <option value='4'>April</option>
-          <option value='5'>May</option>
-          <option value='6'>June</option>
-          <option value='7'>July</option>
-          <option value='8'>August</option>
-          <option value='9'>September</option>
-          <option value='10'>October</option>
-          <option value='11'>November</option>
-          <option value='12'>December</option>
+          <option value='2'>
+<T keyName="february-option" /></option>
+          <option value='3'>
+<T keyName="march-option" /></option>
+          <option value='4'>
+<T keyName="april-option" /></option>
+          <option value='5'>
+<T keyName="may-option" /></option>
+          <option value='6'>
+<T keyName="june-option" /></option>
+          <option value='7'>
+<T keyName="july-option" /></option>
+          <option value='8'>
+<T keyName="august-option" /></option>
+          <option value='9'>
+<T keyName="september-option" /></option>
+          <option value='10'>
+<T keyName="october-option" /></option>
+          <option value='11'>
+<T keyName="november-option" /></option>
+          <option value='12'>
+<T keyName="december-option" /></option>
         </select>
       </div>
       <button className='btn' onClick={() => generateLink()}>
-        Generate Link
+        
+<T keyName="generate-link-button" />
       </button>
 
       {link !== '' ? (
         <>
           <p className='gen-link'>{link}</p>
           <Link to={`birthday/${name}/${day}/${month}`}>
-            <button className='btn'>Visit Link</button>
+            <button className='btn'>
+<T keyName="visit-link-button" /></button>
           </Link>
         </>
       ) : (

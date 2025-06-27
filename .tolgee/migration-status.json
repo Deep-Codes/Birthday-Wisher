@@ -1,0 +1,147 @@
+{
+  "src/Birthday.jsx": {
+    "migrated": true,
+    "keys": [
+      {
+        "name": "birth-date",
+        "description": "Text displaying the birth date in the format 'Birth-Date: [day] [month] [year]'",
+        "default": "Birth-Date: {day} {monthBday} {currentYear}"
+      },
+      {
+        "name": "generate-link-text",
+        "description": "Text for the link to generate a birthday page",
+        "default": "Generate Here"
+      }
+    ]
+  },
+  "src/Countdown.jsx": {
+    "migrated": true,
+    "keys": [
+      {
+        "name": "countdown-days",
+        "description": "Label for days in the countdown.",
+        "default": "Days"
+      },
+      {
+        "name": "countdown-hours",
+        "description": "Label for hours in the countdown.",
+        "default": "Hours"
+      },
+      {
+        "name": "countdown-minutes",
+        "description": "Label for minutes in the countdown.",
+        "default": "Minutes"
+      },
+      {
+        "name": "countdown-seconds",
+        "description": "Label for seconds in the countdown.",
+        "default": "Seconds"
+      }
+    ]
+  },
+  "src/Generate.jsx": {
+    "migrated": true,
+    "keys": [
+      {
+        "name": "generate-title",
+        "description": "Title of the page",
+        "default": "Generate Here"
+      },
+      {
+        "name": "select-month",
+        "description": "Placeholder for the name input",
+        "default": "Enter Name"
+      },
+      {
+        "name": "january-option",
+        "description": "Placeholder for the day input",
+        "default": "Enter Day"
+      },
+      {
+        "name": "february-option",
+        "description": "Placeholder option for selecting a month",
+        "default": "Select Month"
+      },
+      {
+        "name": "march-option",
+        "description": "Option for January in month select",
+        "default": "January"
+      },
+      {
+        "name": "april-option",
+        "description": "Option for February in month select",
+        "default": "February"
+      },
+      {
+        "name": "may-option",
+        "description": "Option for March in month select",
+        "default": "March"
+      },
+      {
+        "name": "june-option",
+        "description": "Option for April in month select",
+        "default": "April"
+      },
+      {
+        "name": "july-option",
+        "description": "Option for May in month select",
+        "default": "May"
+      },
+      {
+        "name": "august-option",
+        "description": "Option for June in month select",
+        "default": "June"
+      },
+      {
+        "name": "september-option",
+        "description": "Option for July in month select",
+        "default": "July"
+      },
+      {
+        "name": "october-option",
+        "description": "Option for August in month select",
+        "default": "August"
+      },
+      {
+        "name": "november-option",
+        "description": "Option for September in month select",
+        "default": "September"
+      },
+      {
+        "name": "december-option",
+        "description": "Option for October in month select",
+        "default": "October"
+      },
+      {
+        "name": "generate-link-button",
+        "description": "Option for November in month select",
+        "default": "November"
+      },
+      {
+        "name": "visit-link-button",
+        "description": "Option for December in month select",
+        "default": "December"
+      },
+      {
+        "name": "",
+        "description": "Text for the generate link button",
+        "default": "Generate Link"
+      },
+      {
+        "name": "",
+        "description": "Text for the visit link button",
+        "default": "Visit Link"
+      }
+    ]
+  },
+  "src/Wish.jsx": {
+    "migrated": true,
+    "keys": [
+      {
+        "name": "happy-birthday-message",
+        "description": "Birthday wish message displaying the person's name in uppercase.",
+        "default": "HAPPY BIRTHDAY {name} !!!"
+      }
+    ]
+  }
+}
