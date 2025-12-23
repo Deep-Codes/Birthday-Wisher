@@ -29,7 +29,7 @@ const Generate = () => {
           max={31}
           min={1}
         />
-        <select value={month} onChange={(e) => setMonth(e.target.value)}>
+        <select className="month-select" value={month} onChange={(e) => setMonth(e.target.value)}>
           <option value=''>Select Month</option>
           <option selected value='1'>
             January

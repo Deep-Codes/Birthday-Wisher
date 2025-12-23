@@ -146,3 +146,11 @@ a {
   margin-top: 20px;
   font-size: 400;
 }
+
+.month-select {
+  background-color: #1d1d1d; /* dark */
+  color: white;
+  border: 1px solid #555;
+  padding: 10px;
+  border-radius: 8px;
+}
